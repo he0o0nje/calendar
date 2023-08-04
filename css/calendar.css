@@ -1,61 +1,107 @@
 @charset "UTF-8";
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    background: deepskyblue;
+  background: deepskyblue;
 }
 button {
-    background-color: #fff;
-    border: none;
-    cursor: pointer;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
 }
 .box_main {
-    background-color: #fff;
-    width: 390px;
-    height: 390px;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
+  background-color: #fff;
+  width: 390px;
+  height: 390px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
 }
 .date_wrap {
-    text-align: center;
+  text-align: center;
 }
 .date_month:first-child {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 4px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 4px;
 }
 .month_move {
-    font-size: 20px;
-    padding: 10px 30px;
-    color: #aaa;
+  font-size: 20px;
+  padding: 10px 30px;
+  color: #aaa;
 }
 .month_move:hover {
-    transform: scale(1.1);
-    transition: 0.2s;
+  transform: scale(1.1);
+  transition: 0.2s;
 }
-table {
-    margin: 0 auto;
-    border-spacing: 12px;
-    table-layout: fixed;
-}
-.hide {
-    color: #ccc;
+/* table {
+  margin: 0 auto;
+  border-spacing: 12px;
+  table-layout: fixed;
 }
 td {
-    width: 300px;
-    padding: 8px;
+  width: 300px;
+  padding: 8px;
 }
 td:hover {
-    table-layout: fixed;
-    background: deepskyblue;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 50%;
+  table-layout: fixed;
+  background: deepskyblue;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+} */
+.hide {
+  color: #ccc;
+}
+
+ul,
+li {
+  list-style: none;
+}
+.calendar ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.calendar .weeks li {
+  font-weight: 500;
+}
+.calendar .days {
+  margin-bottom: 20px;
+}
+.calendar ul li {
+  width: calc(100% / 7);
+  position: relative;
+}
+.calendar .days li {
+  z-index: 1;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.days li.active {
+  color: #fff;
+}
+.calendar .days li::before {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -1;
+}
+.days li:hover::before {
+  background: #f2f2f2;
+}
+.days li.active::before {
+  background: #008aff;
 }

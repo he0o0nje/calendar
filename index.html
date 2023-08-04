@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>calendar</title>
-    <link rel="stylesheet" href="./css/calendar.css">
+    <link rel="stylesheet" href="./css/calendar.css" />
 </head>
+
 <body>
     <div class="box_main">
         <div class="date_wrap">
             <div class="date_month">
                 <div class="button_wrap">
-                    <button type="button" id="month_prev" class="month_move" data-ym="2023-07-01"> < </button>
+                    <button type="button" id="prev" class="month_move" data-ym="2023-07-01"> < </button>
                     <span class="month_this"></span>
-                    <button type="button" id="month_next" class="month_move" data-ym="2023-09-01"> > </button>
+                    <button type="button" id="next" class="month_move" data-ym="2023-09-01"> > </button>
                 </div>
             </div>
-            <table class="date_month">
+            <div class="calendar">
+                <ul class="weeks">
+                    <li>Sun</li>
+                    <li>Mon</li>
+                    <li>Tue</li>
+                    <li>Wed</li>
+                    <li>Thu</li>
+                    <li>Fri</li>
+                    <li>Sat</li>
+                </ul>
+                <ul class="days"></ul>
+            </div>
+            <!-- <table class="date_month">
                 <thead>
                     <tr>
                         <th>Sun</th>
@@ -73,11 +87,12 @@
                         <td class="thu"><a>31</a></td>
                         <td class="fri hide"><a>1</a></td>
                         <td class="sat hide"><a>2</a></td>
-                    </tr> -->
+                    </tr>
                 </tbody>
-            </table>
+            </table> -->
         </div>
     </div>
     <script src="./js/calendar.js"></script>
 </body>
+
 </html>
