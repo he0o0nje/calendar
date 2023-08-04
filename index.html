@@ -4,8 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calendar</title>
+    <link rel="stylesheet" href="./css/calendar.css">
 </head>
 <body>
-    
+    <div class="box_main">
+        <div class="date_wrap">
+            <div class="date_month">
+                <div class="button_wrap">
+                    <button type="button" id="month_prev" class="month_move" data-ym="2023-07-01"> < </button>
+                    <span class="month_this"></span>
+                    <button type="button" id="month_next" class="month_move" data-ym="2023-09-01"> > </button>
+                </div>
+            </div>
+            <table class="date_month">
+                <thead>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody id="tbl_month">
+                    <!-- <tr>
+                        <td class="sun hide"><a>30</a></td>
+                        <td class="mon hide"><a>31</a></td>
+                        <td class="tue"><a>1</a></td>
+                        <td class="wed"><a>2</a></td>
+                        <td class="thu"><a>3</a></td>
+                        <td class="fri"><a>4</a></td>
+                        <td class="sat"><a>5</a></td>
+                    </tr>
+                    <tr>
+                        <td class="sun"><a>6</a></td>
+                        <td class="mon"><a>7</a></td>
+                        <td class="tue"><a>8</a></td>
+                        <td class="wed"><a>9</a></td>
+                        <td class="thu"><a>10</a></td>
+                        <td class="fri"><a>11</a></td>
+                        <td class="sat"><a>12</a></td>
+                    </tr>
+                    <tr>
+                        <td class="sun"><a>13</a></td>
+                        <td class="mon"><a>14</a></td>
+                        <td class="tue"><a>15</a></td>
+                        <td class="wed"><a>16</a></td>
+                        <td class="thu"><a>17</a></td>
+                        <td class="fri"><a>18</a></td>
+                        <td class="sat"><a>19</a></td>
+                    </tr>
+                    <tr>
+                        <td class="sun"><a>20</a></td>
+                        <td class="mon"><a>21</a></td>
+                        <td class="tue"><a>22</a></td>
+                        <td class="wed"><a>23</a></td>
+                        <td class="thu"><a>24</a></td>
+                        <td class="fri"><a>25</a></td>
+                        <td class="sat"><a>26</a></td>
+                    </tr>
+                    <tr>
+                        <td class="sun"><a>27</a></td>
+                        <td class="mon"><a>28</a></td>
+                        <td class="tue"><a>29</a></td>
+                        <td class="wed"><a>30</a></td>
+                        <td class="thu"><a>31</a></td>
+                        <td class="fri hide"><a>1</a></td>
+                        <td class="sat hide"><a>2</a></td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./js/calendar.js"></script>
 </body>
 </html>

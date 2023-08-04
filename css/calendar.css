@@ -1,2 +1,61 @@
 @charset "UTF-8";
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: deepskyblue;
+}
+button {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.box_main {
+    background-color: #fff;
+    width: 390px;
+    height: 390px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+.date_wrap {
+    text-align: center;
+}
+.date_month:first-child {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 4px;
+}
+.month_move {
+    font-size: 20px;
+    padding: 10px 30px;
+    color: #aaa;
+}
+.month_move:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+table {
+    margin: 0 auto;
+    border-spacing: 12px;
+    table-layout: fixed;
+}
+.hide {
+    color: #ccc;
+}
+td {
+    width: 300px;
+    padding: 8px;
+}
+td:hover {
+    table-layout: fixed;
+    background: deepskyblue;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+}
